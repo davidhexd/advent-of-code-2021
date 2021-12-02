@@ -5,7 +5,10 @@ public struct Day {
   let runner: () -> Void
   
   public func run() {
+    print("")
+    print("====== Day \(name): =====")
     runner()
+    print("")
   }
 }
 
