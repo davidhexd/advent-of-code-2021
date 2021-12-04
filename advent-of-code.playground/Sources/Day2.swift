@@ -1,6 +1,6 @@
 import Foundation
 
-public let dayTwo = Day(name: "two") {
+public let day2 = Day(name: "two") {
   let commands = parseInput()
   
   let finalPositionPart1 = commands.reduce(PositionPart1()) { currentPosition, command in
@@ -74,7 +74,7 @@ struct Command {
 }
 
 func parseInput() -> [Command] {
-  guard let rawInput = contentsOfFile(name: "day-2", type: "txt") else {
+  guard let rawInput = Helpers.contentsOfFile(name: "day-2", type: "txt") else {
     fatalError()
   }
   

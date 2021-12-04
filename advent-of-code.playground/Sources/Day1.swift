@@ -1,7 +1,7 @@
 import Foundation
 
-public let dayOne = Day(name: "one") {
-  guard let rawInput = contentsOfFile(name: "day-1", type: "txt") else {
+public let day1 = Day(name: "one") {
+  guard let rawInput = Helpers.contentsOfFile(name: "day-1", type: "txt") else {
     return
   }
   
