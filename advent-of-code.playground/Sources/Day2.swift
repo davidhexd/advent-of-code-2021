@@ -73,7 +73,7 @@ struct Command {
   let distance: Int
 }
 
-func parseInput() -> [Command] {
+private func parseInput() -> [Command] {
   guard let rawInput = Helpers.contentsOfFile(name: "day-2", type: "txt") else {
     fatalError()
   }

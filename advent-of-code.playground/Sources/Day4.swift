@@ -189,7 +189,7 @@ struct Game: CustomStringConvertible {
   }
 }
 
-func parseGameInput(name: String) -> (Game, [Int]) {
+private func parseGameInput(name: String) -> (Game, [Int]) {
   guard let rawGameInput = Helpers.contentsOfFile(name: name, type: "txt") else {
     fatalError()
   }
