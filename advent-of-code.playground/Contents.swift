@@ -6,4 +6,5 @@ var greeting = "Hello, playground"
 //day2.run()
 //day3.run()
 //day4.run()
-day5.run()
+//day5.run()
+day6.run()

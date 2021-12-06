@@ -103,22 +103,21 @@ struct Map: CustomStringConvertible {
   }
 }
 
-
-func part1() {
+private func part1() {
   let lines = parseInput(fileName: "day-5")
   let map = Map(lines, supportsDiagonals: false)
   let maxCount = map.points.flatMap { $0 }.filter { $0 >= 2 }.count
   print("Part 1: \(maxCount)")
 }
 
-func part2() {
+private func part2() {
   let lines = parseInput(fileName: "day-5")
   let map = Map(lines, supportsDiagonals: true)
   let maxCount = map.points.flatMap { $0 }.filter { $0 >= 2 }.count
   print("Part 2: \(maxCount)")
 }
 
-func parseInput(fileName: String) -> [Line] {
+private func parseInput(fileName: String) -> [Line] {
   guard let input = Helpers.contentsOfFile(name: fileName, type: "txt") else {
     fatalError()
   }
