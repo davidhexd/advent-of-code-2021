@@ -6,7 +6,7 @@ public let day5 = Day(name: "five") {
   part2()
 }
 
-struct Point: CustomStringConvertible {
+private struct Point: CustomStringConvertible {
   let x: Int
   let y: Int
   
