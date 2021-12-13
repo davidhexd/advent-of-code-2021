@@ -15,7 +15,7 @@ struct Point: CustomStringConvertible {
   }
 }
 
-struct Line: CustomStringConvertible {
+private struct Line: CustomStringConvertible {
   let start: Point
   let end: Point
   
@@ -56,7 +56,7 @@ struct Line: CustomStringConvertible {
   }
 }
 
-struct Map: CustomStringConvertible {
+private struct Map: CustomStringConvertible {
   
   init(_ lines: [Line], supportsDiagonals: Bool) {
     // Find max x, y
